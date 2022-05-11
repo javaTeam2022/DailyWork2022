@@ -6,6 +6,8 @@ import java.util.Iterator;
 public class Collections_Ex4 {
 
 	public static void main(String[] args) {
+		
+		// TYPE UNSEFE : It collect any type of data .
 		ArrayList al = new ArrayList();
 		
 		al.add("1.Venumadhav");
@@ -15,6 +17,7 @@ public class Collections_Ex4 {
 		al.add("5.Ranjith kumar");
 		al.add(101);
 		al.add(102);
+		al.add(null);
 		
 		System.out.println(al);
 		// Get the iterator
@@ -22,6 +25,7 @@ public class Collections_Ex4 {
 		// Print the first item.
 		System.out.println(itr.next());
 		
+		// TYPE SEFE : It collect declare datatype only .
 		ArrayList<String> as = new ArrayList<String>();
 		
          as.add("1.RCB");//add the all elements in the in the array point of view.
@@ -29,15 +33,27 @@ public class Collections_Ex4 {
          as.add("3.CSK");
          as.add("4.SR");
          as.add("5.SRH");
+         as.add(null);// Arraylist allow the null.
          
          System.out.println(as);
+         Iterator<String> is = as.iterator();
+         while (is.hasNext()) {
+           System.out.println(is.next()); 
+			
+		}
          al.addAll(as);//addall method can be used in the add the all elements in in the arrays point of view
          System.out.println(al);
 //         as.removeAll(as);
-         as.add(1,"kalyan");//position will be changed to the element. 
-         System.out.println(as);
+//         as.add(1,"kalyan");//1st position will be changed name. 
+//         System.out.println(as);
+         al.set(3,"Marolix");
+         System.out.println(al);
+         al.add(4,"Employee");
+         System.out.println(al);
          System.out.println(as.contains("3.CSK"));
-       //containall allthe elements are same then returns true otherwise it return false.
+         al.removeAll(al);// Remove all the elements
+         System.out.println("Remove all "+al);
+       //containall all the elements are same then returns true otherwise it return false.
          System.out.println(as.containsAll(al));
          System.out.println(" Empty :"+as.isEmpty());
          // Get the iterator
