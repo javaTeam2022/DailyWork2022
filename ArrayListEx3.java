@@ -8,7 +8,11 @@ public class ArrayListEx3
 	int a[] = {11,12,13};
 	
 		ArrayList<String>al=new ArrayList<String>();
+<<<<<<< HEAD
 		
+=======
+		ArrayList<String>al3=new ArrayList();
+>>>>>>> 5755145 (Practiced Programs)
 		al.add("RCB");
 		al.add("SRH");
 		al.add("RR");
@@ -20,9 +24,15 @@ public class ArrayListEx3
 		al.add("LSG");
 		al.add("GT");
 		al.add(s);
+<<<<<<< HEAD
 		
 		System.out.println("Elements are "+al);
 		
+=======
+		al3.add("500");
+		System.out.println("Elements are "+al);
+		al.addAll(al3);
+>>>>>>> 5755145 (Practiced Programs)
 		ArrayList al2 = new ArrayList();
 		al2.add("Bangalore");
 		al2.add("Hyderabad");
@@ -48,8 +58,14 @@ public class ArrayListEx3
 		System.out.println("Removed the element: "+al.remove("Bangalore"));
 		System.out.println("after remove check al and al1 have same elements: "+al.containsAll(al2));
 		System.out.println("comapare two objectes: "+al.equals(al2));
+<<<<<<< HEAD
 		System.out.println();
 
+=======
+		System.out.println(al.set(7, "VENU"));
+		System.out.println("After set value: " +al);
+        
+>>>>>>> 5755145 (Practiced Programs)
         Iterator it =al.iterator();
         System.out.println("Iterating Present Elemets by using iterator method");	
         while(it.hasNext())
@@ -60,7 +76,12 @@ public class ArrayListEx3
 
         al.add(2,"Goa");
         System.out.println("\nAfter adding a elemet by index "+al);
+<<<<<<< HEAD
 
+=======
+        
+        System.out.println("after Null: "+al);
+>>>>>>> 5755145 (Practiced Programs)
 //        Object[]ob=al.toArray();//returns array of objectType.
 //        //String[]s=(String[])
 //        for(int i=0;i<ob.length;i++)
